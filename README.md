@@ -26,12 +26,14 @@ El script de ataque demuestra vulnerabilidades como la exposición de contraseñ
 PRUEBAS
 *PRUEBA 1
 Al ingresar un usuario unico el codigo determina y representa rapidamente las credenciales del API a pesar de editar los
-datos con el endpoint update al correr nuevamente el script se revelan los datos.
+datos con el endpoint update al correr nuevamente el script se revelan los datos. La contraseña sin embargo debe ser de 3 digitos, si se ingresa una contraseña con más/menos caracteres el programa no la encuentra.
+
 
 *PRUEBA 2
-Al ingresar multiples usuarios el resultado es igual, el calculo se realiza en menos de un segundo e independientemente de el número de usuarios el codigo es capaz de sacar la información
+Al ingresar multiples usuarios hay un problema ya que el codigo apunta a un usuario especifico. Por lo tanto la información de los otros usuarios no sera expuesta.
 
 La API está diseñada para demostrar vulnerabilidades comunes en sistemas de autenticación, haciendo evidente la importancia de prácticas como verificación de dos pasos aparte de las contraseñas y la implementación de controles de acceso adecuados para evitar este tipo de vulnerabilidades en la seguridad de sistemas futuros.
+
 
 
 
