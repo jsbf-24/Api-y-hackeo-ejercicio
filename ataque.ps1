@@ -61,4 +61,9 @@ for ($i = 0; $i -lt $total_caracteres; $i++) {
 Write-Host ""
 Write-Host "Contraseña no encontrada" -ForegroundColor Red
 Write-Host "Intentos totales: $contador" -ForegroundColor Yellow
+
 exit 1
+
+
+
+jsbf-24
